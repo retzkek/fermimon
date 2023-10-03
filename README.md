@@ -29,10 +29,11 @@ To better understand the scale of the problem (if there is indeed one), you've
 decided to print a report from each day's data that summarizes each job's
 efficiency.
 
-The ideal job fully utilizes the CPU, and uses close to the requested memory as
-possible. As a first pass though, you just want to identify jobs and experiments
-that are below **75%** instantaneous CPU utilization efficiency and **80%** requested memory
-efficiency (instantaneous memory usage / requested memory).
+The ideal job fully utilizes the CPU for its entire runtime, and uses as close
+to the requested memory as possible. As a first pass though, you just want to
+identify jobs and experiments that are below **75%** instantaneous CPU
+utilization efficiency and **80%** requested memory efficiency (instantaneous
+memory usage divided by requested memory).
 
 For each job in the input data print the job ID and whether the job was above
 both efficiencies ("OK"), below CPU efficiency ("CPU"), below memory efficiency
@@ -77,7 +78,8 @@ information:
 * starting time: April 1, 2023 1:00:00 AM UTC
 
 There is then observed data from three timestamps. The first data point shows
-the job was using 82% of CPU and 868 MiB of memory at 1:00:30 AM UTC.
+the job was using 82% of CPU and 868 MiB of memory at 1:00:30 AM. At that
+instant, it had 82% CPU efficiency and ~85% memory efficiency.
 
 ## Example Output
 
