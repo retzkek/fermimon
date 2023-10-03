@@ -44,8 +44,12 @@ See the example output below.
 * Your solution should read the input from stdin and write the output to stdout.
 * Use whatever language, libararies, or tools you like (and can justify), so long
   as they are commonly available.
-* Share your source and a document (which can be comments in the source file(s)) with
-  any requirements and instructions to build and run.
+* Share your source and a document (which can be comments in the source file(s))
+  with any requirements and instructions to build, test, and run your solution.
+  Also be prepared to discuss how you would deploy your solution in production.
+* If something is unclear, go ahead and make whatever assumptions you need in
+  order to complete the problem. Be prepared to discuss what assumptions you
+  made and why.
 * Your solution should follow the examples but as a valued contributor and
   stakeholder, feel free to propose any improvments you'd make (for example: in
   data format, analysis methods, or criteria).
