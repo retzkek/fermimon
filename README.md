@@ -18,8 +18,8 @@ ran:
 * the *timestamp* of when the job started running
 * a *time series* of data, that contains:
   * the *timestamp* when the data was taken
-  * the *CPU usage* as a fraction of one core
-  * the *memory usage* in MiB
+  * the *CPU usage* as a fraction of one core when the data was taken
+  * the *memory usage* in MiB when the data was taken
   
 See the example input data below.
 
@@ -31,8 +31,8 @@ efficiency.
 
 The ideal job fully utilizes the CPU, and uses close to the requested memory as
 possible. As a first pass though, you just want to identify jobs and experiments
-that are below **75%** CPU utilization efficiency and **80%** requested memory
-efficiency.
+that are below **75%** instantaneous CPU utilization efficiency and **80%** requested memory
+efficiency (instantaneous memory usage / requested memory).
 
 For each job in the input data print the job ID and whether the job was above
 both efficiencies ("OK"), below CPU efficiency ("CPU"), below memory efficiency
@@ -77,7 +77,7 @@ information:
 * starting time: April 1, 2023 1:00:00 AM UTC
 
 There is then observed data from three timestamps. The first data point shows
-the job used 82% of CPU and 868 MiB of memory at 1:00:30 AM UTC.
+the job was using 82% of CPU and 868 MiB of memory at 1:00:30 AM UTC.
 
 ## Example Output
 
